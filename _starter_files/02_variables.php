@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 /* ----- Variables & Data Types ----- */
 
@@ -22,3 +22,14 @@
 - Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
 - Variables are case-sensitive ($name and $NAME are two different variables)
 */
+
+$name = 'Kalle';
+$age = 32;
+$has_kids = false;
+$cash_value = 3.50;
+
+// echo "${name} has ${cash_value} ";
+define('HOST', 'localhost');
+define('DB_NAME', 'dev_db');
+
+
