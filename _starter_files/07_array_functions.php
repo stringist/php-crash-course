@@ -67,7 +67,7 @@ $numbers = range(1, 30);
 $new_numbers = array_map(function ($number) {
   return "Number {$number}"; }, $numbers);
 
-// print_r($new_numbers);
+print_r($new_numbers);
 
 // filter
 $less_than_10 = array_filter($numbers, fn($number) => $number < 10);
@@ -76,4 +76,6 @@ $less_than_10 = array_filter($numbers, fn($number) => $number < 10);
 
 $sum_all = array_reduce($numbers, fn($carry, $number) => $carry + $number);
 
-var_dump($sum_all);
+// var_dump($sum_all);
+
+// echo 'helooo';

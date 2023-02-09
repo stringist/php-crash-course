@@ -54,7 +54,7 @@ $numbers = range(1, 20);
 
 // Map through array and create a new one
 $newNumbers = array_map(function ($number) {
-  return "Number ${number}";
+  return "Number {$number}";
 }, $numbers);
 
 // Filter array
@@ -63,4 +63,6 @@ $lessThan10 = array_filter($numbers, fn($number) => $number < 10);
 // Array Reduce
 // "carry" holds the return value of the previous iteration
 $sum = array_reduce($numbers, fn($carry, $number) => $carry + $number);
-var_dump($sum);
+// var_dump($sum);
+
+// echo 'hellooo';
