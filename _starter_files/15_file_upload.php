@@ -1,12 +1,13 @@
 <?php
+$allowed_ext = array('png', 'jpg', 'jpeg', 'gif');
+
 if (isset($_POST['submit'])) {
-  $allowed_ext = array('png', 'jpg', 'jpeg', 'gif');
 
   if (!empty($_FILES['upload']['name'])) {
     $file_name = $_FILES['upload']['name'];
     $file_size = $_FILES['upload']['size'];
     $file_tmp = $_FILES['upload']['tmp_name'];
-    $target_dir = 'uploads/{$file_name}';
+    $target_dir = "uploads/{$file_name}";
 
     // get file ext
     $file_ext = explode('.', $file_name);
